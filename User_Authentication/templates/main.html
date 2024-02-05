@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div>
+            <h2> Home Page </h2>
+       <hr>
+       <p class="msg"> Hi {{username}}, Welcome to Home Page</p>
+       
+        <a href="{{url_for('logout')}}">Logout</a>
+    </div>
+    </body>
+</html>
