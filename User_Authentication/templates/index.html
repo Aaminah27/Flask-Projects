@@ -11,11 +11,11 @@
        <hr>
        <p class="msg"> {{msg}}</p>
         <form method ='POST', action=" {{url_for('login')}} ">
-            <input type="text" name="email" id="login_email" placeholder="Enter your Email address" 
-            class="text_box" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <input type="email" name="email" id="login_email" placeholder="Enter your Email address" 
+            class="text_box" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
             <br><br>
             <input type="password" name="password" id="login_passowrd" placeholder="Enter your Password" 
-            class="text_box">
+            class="text_box" required>
             <br><br>
             <button type ="submit" name="submit"> Submit </button>
         </form>
