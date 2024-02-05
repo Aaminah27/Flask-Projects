@@ -12,12 +12,12 @@
        <p class="msg"> {{msg}}</p>
         <form method ='POST' action="{{url_for('registration')}}">
             <input type="text" name="username" id="username" placeholder="Enter your Username" class="text_box"
-            required pattern="^[a-zA-Z]{1,30}$">
+            required pattern="^[a-zA-Z]{3,30}$">
             <br><br>
-            <input type="text" name="email" id="r_email" placeholder="Enter your Email address" 
-            class="text_box" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <input type="email" name="email" id="r_email" placeholder="Enter your Email address" 
+            class="text_box" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
             <br><br>
-            <input type="password" name="password" id="passowrd_1" placeholder="Enter your Password" 
+            <input type="password" name="password" id="passowrd_1" placeholder="Enter your Password"  
             class="text_box" required>
             <br><br>
             <input type="password" name="second_pass" id="passowrd_2" placeholder="Confirm your Password" 
