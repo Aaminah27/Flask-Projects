@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div>
+            <h2> Login </h2>
+       <hr>
+       <p class="msg"> {{msg}}</p>
+        <form method ='POST', action=" {{url_for('login')}} ">
+            <input type="text" name="email" id="login_email" placeholder="Enter your Email address" 
+            class="text_box" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <br><br>
+            <input type="password" name="password" id="login_passowrd" placeholder="Enter your Password" 
+            class="text_box">
+            <br><br>
+            <button type ="submit" name="submit"> Submit </button>
+        </form>
+        <a href="{{url_for('registration')}}">Don't have an account? Register</a>
+    </div>
+    </body>
+</html>
