@@ -1,0 +1,37 @@
+div{
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px whitesmoke;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(191, 186, 186);
+}
+
+
+button{
+    background-color: rgb(35, 35, 118);
+    padding: 10px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    background-image: linear-gradient(rgb(40, 40, 125) ,rgb(74, 73, 73) );
+}
+
+.text_box{
+    height: 40px;
+    width: 200px
+}
+
+.msg{
+    color: red;
+    font-style: bold;
+    font-size: 15px;
+}
