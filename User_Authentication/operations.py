@@ -62,10 +62,11 @@ class db_operations:
     def confirm_password(self,email):
         conn = self.establish_connection()
         curr = conn.cursor()
-        curr.execute("Select * FROM users where email = %s", (email,))
-        rows = curr.fetchall()
-        count = len(rows)
-        if count == 1:
-            db_password = rows[0][3]
-            return db_password
+        if(self.email_exists(email)):
+            curr.execute("Select * FROM users where email = %s", (email,))
+            rows = curr.fetchall()
+            count = len(rows)
+            if count == 1:
+                db_password = rows[0][3]
+                return db_password
         return None
